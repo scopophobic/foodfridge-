@@ -99,7 +99,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
-
+import Hero from "components/hero/BackgroundAsImageWithCenteredContent.js";
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
@@ -113,15 +113,7 @@ export default function App() {
 
   return (
     <>
-      <GlobalStyles />
-      <Router>
-        <Routes>
-          <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
-          <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-          <Route path="/thank-you" element={<ThankYouPage />} />
-          <Route path="/" element={<MainLandingPage />} />
-        </Routes>
-      </Router>
+      <Hero/>
     </>
   );
 }

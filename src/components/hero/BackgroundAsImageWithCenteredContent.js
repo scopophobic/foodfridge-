@@ -39,21 +39,21 @@ export default () => {
   const navLinks = [
     <NavLinks key={1}>
       <NavLink href="#">
-        About
+        Store
       </NavLink>
       <NavLink href="#">
-        Blog
+        Map
       </NavLink>
       <NavLink href="#">
         Locations
       </NavLink>
-      <NavLink href="#">
+      {/* <NavLink href="#">
         Pricing
-      </NavLink>
+      </NavLink> */}
     </NavLinks>,
     <NavLinks key={2}>
       <PrimaryLink href="/#">
-        Hire Us
+        Sign In
       </PrimaryLink>
     </NavLinks>
   ];
@@ -65,9 +65,9 @@ export default () => {
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>
-              Book Music & Comedy Events
+          Less Waste, More Value
               <br />
-              anywhere in New York
+              Blockchain Empowering Sustainable Supermarkets
           </Heading>
           <PrimaryAction>Search Events Near Me</PrimaryAction>
         </Content>
