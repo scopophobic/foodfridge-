@@ -69,7 +69,7 @@ export default ({
         content: "can be used for soups nd stews",
         price: "12rupees/kg",
         rating: "Available -> ",
-        reviews: 8,
+        reviews: "20 kg",
         url: "#"
       },
       {
@@ -79,7 +79,7 @@ export default ({
         content: "Can be used as  natural exfoliant for skin or as a fertilizer for plants",
         price: "50rupees/per packet",
         rating: "available ->",
-        reviews: (5,"kg"),
+        reviews: ("5 kg"),
         url: "#"
       },
       {
@@ -89,7 +89,7 @@ export default ({
         content: "can be used for baking nad smoothies",
         price: "20rupees/kg",
         rating: "available ->",
-        reviews: "10kg",
+        reviews: "10 kg",
         url: "#"
       },
       {
@@ -109,7 +109,7 @@ export default ({
         content: "They can be grated or shredded and used in baked dishes, casseroles, or as a topping for soups.",
         price: "100rupees/500g",
         rating: "available ->",
-        reviews: "3kg",
+        reviews: "3 kg",
         url: "#"
       },
       {

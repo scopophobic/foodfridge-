@@ -25,11 +25,11 @@ const StyledHeader = styled(Header)`
 const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
-  background-image: url("https://images.unsplash.com/photo-1536300007881-7e482242baa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80");
+  background-image: url("https://images.unsplash.com/photo-1615897570582-285ffe259530?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
 `;
 const StyledButton = tw.button`
   mt-8
-  bg-indigo-700 
+  bg-green-700 
   text-white 
   font-bold 
   py-2 
@@ -62,9 +62,9 @@ export default () => {
       <NavLink href="#">Store</NavLink>
       <NavLink href="#">Map</NavLink>
       <NavLink href="#">Locations</NavLink>
-      {/* <NavLink href="#">
-        Pricing
-      </NavLink> */}
+      <NavLink href="#">
+        About
+      </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
       <PrimaryLink href="pages/Signup.js">Sign In</PrimaryLink>
