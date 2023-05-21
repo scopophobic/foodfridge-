@@ -3,7 +3,14 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import Header, {
+  NavLink,
+  NavLinks,
+  PrimaryLink as PrimaryLinkBase,
+  LogoLink,
+  NavToggle,
+  DesktopNavLinks,
+} from "../headers/light.js";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none w-full`}
@@ -15,12 +22,26 @@ const StyledHeader = styled(Header)`
   }
 `;
 
-const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`
+const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
   background-image: url("https://images.unsplash.com/photo-1536300007881-7e482242baa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80");
 `;
-
+const StyledButton = tw.button`
+  mt-8
+  bg-indigo-700 
+  text-white 
+  font-bold 
+  py-2 
+  px-4 
+  rounded 
+  hover:bg-indigo-600 
+  focus:outline-none 
+  focus:shadow-outline
+  transition 
+  duration-150 
+  ease-in-out
+`;
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-75`;
 
 const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-full flex flex-col`;
@@ -38,24 +59,16 @@ const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-bas
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
-        Store
-      </NavLink>
-      <NavLink href="#">
-        Map
-      </NavLink>
-      <NavLink href="#">
-        Locations
-      </NavLink>
+      <NavLink href="#">Store</NavLink>
+      <NavLink href="#">Map</NavLink>
+      <NavLink href="#">Locations</NavLink>
       {/* <NavLink href="#">
         Pricing
       </NavLink> */}
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="pages/Signup.js">
-        Sign In
-      </PrimaryLink>
-    </NavLinks>
+      <PrimaryLink href="pages/Signup.js">Sign In</PrimaryLink>
+    </NavLinks>,
   ];
 
   return (
@@ -65,11 +78,18 @@ export default () => {
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>
-          Less Waste, More Value
-              <br />
-              Blockchain Empowering Sustainable Supermarkets
+            Less Waste, More Value
+            <br />
+            Blockchain Empowering Sustainable Supermarkets
           </Heading>
-          <button><a href="https://the-eat-project.singhsahaj2001.repl.co/">Supermarket Inventory System</a></button>
+          <StyledButton>
+            <a
+              href="https://the-eat-project.singhsahaj2001.repl.co/"
+              tw="no-underline text-white"
+            >
+              Supermarket Inventory System
+            </a>
+          </StyledButton>
         </Content>
       </HeroContainer>
     </Container>
