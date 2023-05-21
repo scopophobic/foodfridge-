@@ -1,7 +1,7 @@
 import React from "react";
 import GlobalStyles from 'styles/GlobalStyles';
 import { css } from "styled-components/macro"; //eslint-disable-line
-
+import tw from "twin.macro";
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
  * the prebuilt landing page components by uncommenting their import and export lines respectively.
@@ -100,20 +100,33 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 import Hero from "components/hero/BackgroundAsImageWithCenteredContent.js";
+
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
-
+import TabGrid from "./components/cards/TabCardGrid.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import Footer from "components/footers/FiveColumnWithInputForm.js";
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
-
+  const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
+  const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
 
   return (
     <>
+    
       <Hero/>
+      <TabGrid
+        heading={
+          <>
+            Checkout our <HighlightedText>Store.</HighlightedText>
+          </>
+        }
+      />
+      {/* <Footers/> */}
+      {/* <Forms/> */}
+    
     </>
   );
 }

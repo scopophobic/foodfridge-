@@ -61,91 +61,73 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 export default ({
   heading = "Checkout the Menu",
   tabs = {
-    Starters: [
+    Available_items: [
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Veg Mixer",
-        content: "Tomato Salad & Carrot",
-        price: "$5.99",
-        rating: "5.0",
-        reviews: "87",
+          "https://media.istockphoto.com/id/183863769/photo/moldy-tomato.jpg?s=612x612&w=0&k=20&c=WR-y5jeZuEt9ZzPDLWmq5xnwWcDxpfR1c8CtgVW8Kyw=",
+        title: "Tomatoes",
+        content: "can be used for soups nd stews",
+        price: "12rupees/kg",
+        rating: "Available -> ",
+        reviews: 8,
         url: "#"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Macaroni",
-        content: "Cheese Pizza",
-        price: "$2.99",
-        rating: "4.8",
-        reviews: "32",
+          "https://m.media-amazon.com/images/I/71AH8X03JJL._SX522_.jpg",
+        title: "Coffee Grounds",
+        content: "Can be used as  natural exfoliant for skin or as a fertilizer for plants",
+        price: "50rupees/per packet",
+        rating: "available ->",
+        reviews: (5,"kg"),
         url: "#"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327??ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Nelli",
-        content: "Hamburger & Fries",
-        price: "$7.99",
-        rating: "4.9",
-        reviews: "89",
+          "https://delightfuladventures.com/wp-content/uploads/2019/02/what-to-do-with-overripe-bananas-info.jpg",
+        title: "Overripe Bananas",
+        content: "can be used for baking nad smoothies",
+        price: "20rupees/kg",
+        rating: "available ->",
+        reviews: "10kg",
         url: "#"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Jalapeno Poppers",
-        content: "Crispy Soyabeans",
-        price: "$8.99",
-        rating: "4.6",
-        reviews: "12",
+          "https://m.media-amazon.com/images/I/51aKvShNPEL._SX522_.jpg",
+        title: "Yogurt",
+        content: "Crispy Soyabeansubstitute for buttermilk or as an ingredient in pancakes, muffins, or cakes.",
+        price: "80ruppes",
+        rating: "available ->",
+        reviews: "12 packets",
         url: "#"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Cajun Chicken",
-        content: "Roasted Chicken & Egg",
-        price: "$7.99",
-        rating: "4.2",
-        reviews: "19",
+          "https://assets3.thrillist.com/v1/image/2965280/1000x666/flatten;crop;webp=auto;jpeg_quality=60.jpg",
+        title: "Cheese",
+        content: "They can be grated or shredded and used in baked dishes, casseroles, or as a topping for soups.",
+        price: "100rupees/500g",
+        rating: "available ->",
+        reviews: "3kg",
         url: "#"
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1550461716-dbf266b2a8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Chillie Cake",
-        content: "Deepfried Chicken",
-        price: "$2.99",
-        rating: "5.0",
-        reviews: "61",
+          "https://cdn.shopify.com/s/files/1/0586/7303/7499/products/815V9EawbJL._SL1500.png?v=1655986659&width=1946",
+        title: "Milk",
+        content: "natural fertilizer for plants or for making homemade beauty products like face masks",
+        price: "10ruppees/500ml",
+        rating: "available ->",
+        reviews: "20 packets",
         url: "#"
       },
-      {
-        imageSrc:
-          "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Guacamole Mex",
-        content: "Mexican Chilli",
-        price: "$3.99",
-        rating: "4.2",
-        reviews: "95",
-        url: "#"
-      },
-      {
-        imageSrc:
-          "https://images.unsplash.com/photo-1565310022184-f23a884f29da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Carnet Nachos",
-        content: "Chilli Crispy Nachos",
-        price: "$3.99",
-        rating: "3.9",
-        reviews: "26",
-        url: "#"
-      }
+      
+      
     ],
-    Main: getRandomCards(),
-    Soup: getRandomCards(),
-    Desserts: getRandomCards()
+    // Main: getRandomCards(),
+    // Soup: getRandomCards(),
+    // Desserts: getRandomCards()
   }
 }) => {
   /*
@@ -213,7 +195,7 @@ export default ({
                       }}
                       transition={{ duration: 0.3 }}
                     >
-                      <CardButton>Buy Now</CardButton>
+                      <CardButton>Book Now</CardButton>
                     </CardHoverOverlay>
                   </CardImageContainer>
                   <CardText>

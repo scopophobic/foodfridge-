@@ -52,7 +52,7 @@ export default () => {
       </NavLink> */}
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/#">
+      <PrimaryLink href="pages/Signup.js">
         Sign In
       </PrimaryLink>
     </NavLinks>
@@ -69,7 +69,7 @@ export default () => {
               <br />
               Blockchain Empowering Sustainable Supermarkets
           </Heading>
-          <PrimaryAction>Search Events Near Me</PrimaryAction>
+          <button><a href="https://the-eat-project.singhsahaj2001.repl.co/">Supermarket Inventory System</a></button>
         </Content>
       </HeroContainer>
     </Container>
